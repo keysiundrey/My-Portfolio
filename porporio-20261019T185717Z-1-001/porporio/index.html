@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
+</head>
+<body>
+
+</div>
+    <!-- Day Background Layer -->
+    <div class="background-layer bg-day" id="bgDay">
+        <div class="sun"></div>
+        <div class="clouds-wrapper">
+            <div class="cloud day-cloud cloud-1"></div>
+            <div class="cloud day-cloud cloud-2"></div>
+            <div class="cloud day-cloud cloud-3"></div>
+            <div class="cloud day-cloud cloud-4"></div>
+            <div class="cloud day-cloud cloud-5"></div>
+        </div>
+    </div>
+
+    <!-- Night Background Layer -->
+    <div class="background-layer bg-night" id="bgNight">
+        <div class="moon"></div>
+        <div class="clouds-wrapper">
+            <div class="cloud night-cloud cloud-1"></div>
+            <div class="cloud night-cloud cloud-2"></div>
+            <div class="cloud night-cloud cloud-3"></div>
+            <div class="cloud night-cloud cloud-4"></div>
+            <div class="cloud night-cloud cloud-5"></div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">PORTFOLIO</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-btn" data-section="0">Project</a></li>
+                <li><a href="#" class="nav-btn" data-section="1">About</a></li>
+                <li><a href="#" class="nav-btn active" data-section="2">Home</a></li>
+                <li><a href="#" class="nav-btn" data-section="3">Services</a></li>
+                <li><a href="#" class="nav-btn" data-section="4">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Toggle Switch -->
+        <label class="switch-container" aria-label="Toggle Dark Mode">
+            <input type="checkbox" id="themeToggleCheckbox">
+            <span class="slider">
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+                <span class="thumb"></span>
+            </span>
+        </label>
+    </header>
+
+    <!-- Top Panel Horizontal Divider -->
+    <div class="top-header-line"></div>
+
+    <!-- Main Content Centered Container -->
+    <main class="main-content">
+        <div class="panels-container">
+            
+            <!-- Panel 0: Projects -->
+            <div class="glass-card section-card" id="card-0">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="your-image-1.jpg" alt="Lot 19 Cafe POS Preview" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-header">
+                            <h3>Lot 19 Cafe POS</h3>
+                            <span class="project-badge">Web App</span>
+                        </div>
+                        <p>Lot19 Cafe POS is an all-in-one point-of-sale management software designed to streamline retail and hospitality operations, accelerate checkout speeds, and unify sales and inventory data in real time.</p>
+                        <div class="project-tags">
+                            <span class="mini-tag">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="your-image-2.jpg" alt="For Loop Casino Preview" class="project-img" loading="lazy">
+                        </div>
+                        <div class="project-header">
+                            <h3>For Loop Casino</h3>
+                            <span class="project-badge">UI/UX</span>
+                        </div>
+                        <p>Casino For Loop is a simple text-based console program designed to demonstrate fundamental programming control flow by using for, while, and do-while loops to power distinct gameplay mechanics.</p>
+                        <div class="project-tags">
+                            <span class="mini-tag">HTML</span>
+                            <span class="mini-tag">CSS</span>
+                            <span class="mini-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       <!-- Panel 1: About -->
+<section id="card-1" class="section-card">
+    <div class="about-grid-container">
+        
+        <!-- Card 1: Bio & Quick Highlights -->
+<div class="about-square bio-square">
+    <div class="bio-header">
+        <span class="section-subtitle">GET TO KNOW ME</span>
+        <h3 class="section-title">About Me</h3>
+    </div>
+    
+    <p class="bio-description">
+        Hello! I'm <strong>KC Andrey Halcon</strong>, an <strong>Information Technology student</strong> dedicated to bridging user needs with scalable technical solutions. I specialize in developing <strong>clean, responsive, and user-centric digital experiences</strong>.
+    </p>
+
+    <!-- Quick Stat Highlights (Fills lower white space cleanly) -->
+    <div class="bio-stats-grid">
+        <div class="stat-pill">
+            <span class="stat-number">BSIT</span>
+            <span class="stat-label">Degree Track</span>
+        </div>
+        <div class="stat-pill">
+            <span class="stat-number">UI/UX</span>
+            <span class="stat-label">Core Focus</span>
+        </div>
+    </div>
+</div>
+        <!-- Card 2: Combined Info & Skills (Overlapping Avatar & Styled Badges) -->
+<div class="about-square info-skills-square">
+    
+    <!-- Top Overlapping Large Avatar -->
+    <div class="profile-avatar-wrapper avatar-overlap">
+        <img src="profile.jpg" alt="KC Andrey Halcon Profile" class="profile-img">
+    </div>
+
+    <!-- Centered Personal Details -->
+    <div class="compact-info-list centered-info">
+        <div class="info-item-sm">
+            <span class="info-label">NAME</span>
+            <span class="info-value">KC Andrey Halcon</span>
+        </div>
+        <div class="info-item-sm">
+            <span class="info-label">ROLE</span>
+            <span class="info-value">IT Student / Developer</span>
+        </div>
+        <div class="info-item-sm">
+            <span class="info-label">LOCATION</span>
+            <span class="info-value">Manila, Philippines</span>
+        </div>
+    </div>
+
+    <!-- Styled Skill Badges -->
+    <div class="compact-skills-wrapper">
+        <span class="info-label skills-title">SKILLS & TECH</span>
+        <div class="skills-tags-compact">
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React / Vue</span>
+            <span class="skill-tag">UI/UX</span>
+        </div>
+    </div>
+</div>
+        <!-- Card 3: Certificates -->
+        <div class="about-square certificates-square">
+            <h3 class="skills-heading">Certificates</h3>
+            <div class="certificates-grid">
+                <a href="cert1.jpg" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                    <div class="certificate-card">
+                        <img src="cert1.jpg" alt="Certificate 1" class="cert-img" loading="lazy">
+                    </div>
+                </a>
+                <a href="cert2.jpg" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                    <div class="certificate-card">
+                        <img src="cert2.jpg" alt="Certificate 2" class="cert-img" loading="lazy">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Panel 2: Home -->
+<section id="card-2" class="section-card active">
+    <div class="home-grid-container improved-home">
+        <div class="hero-card improved-hero-card">
+
+            <div class="hero-text improved-hero-text">
+                <p class="home-greeting">HELLO, I'M</p>
+
+                <h1>
+                    KC <span>ANDREY</span>
+                </h1>
+
+                <h2>DESIGNER <span>•</span> DEVELOPER</h2>
+
+                <p class="home-description">
+                    I create modern, responsive, and user-friendly digital
+                    experiences through web development and UI/UX design.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#" class="home-btn primary nav-btn" data-section="0">
+                        <i class="fa-solid fa-code"></i>
+                        View My Projects
+                    </a>
+
+                    <a href="#" class="home-btn secondary nav-btn" data-section="4">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="home-tech">
+                    <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span><i class="fa-brands fa-java"></i> Java</span>
+                    <span><i class="fa-solid fa-pen-ruler"></i> UI/UX</span>
+                </div>
+            </div>
+
+            <div class="hero-visual improved-hero-visual">
+                <div class="home-glow"></div>
+
+                <div class="avatar-wrapper improved-avatar-wrapper">
+                    <img src="avatar-3d.png"
+                         alt="KC Andrey Halcon"
+                         class="avatar-img improved-avatar-img">
+
+                    <div class="floating-badge badge-1">
+                        🎨 UI/UX
+                        <small>Creative Design</small>
+                    </div>
+
+                    <div class="floating-badge badge-2">
+                        💻 Code
+                        <small>Web Development</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Floating Chess Trigger (Bottom-Left Corner) -->
+<button id="chessLauncherBtn" class="chess-floating-btn" onclick="toggleChessModal()" title="Play Chess">
+    <i class="fa-solid fa-chess-knight"></i>
+</button>
+
+<!-- Floating Chess Modal Overlay -->
+<div id="chessModal" class="chess-modal-overlay">
+    <div class="chess-modal-card">
+        <!-- Close Modal Button -->
+        <button class="chess-modal-close" onclick="toggleChessModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="cc-layout-wrapper">
+            <div class="cc-board-column">
+                <div class="cc-player-card" id="topPlayerCard">
+                    <div class="cc-player-info">
+                        <img src="your-avatar.jpg" alt="Profile" class="avatar" id="topAvatar" />
+                        <div class="cc-details">
+                            <span class="cc-username">KC Andrey <span class="cc-badge">BOT</span></span>
+                            <span class="cc-rating">(?)</span>
+                        </div>
+                    </div>
+                    <div id="botTimer" class="cc-clock">05:00</div>
+                </div>
+
+                <div id="myBoard" class="board-container cc-board"></div>
+
+                <div class="cc-player-card" id="bottomPlayerCard">
+                    <div class="cc-player-info">
+                        <div class="cc-avatar user-avatar">👤</div>
+                        <div class="cc-details">
+                            <span class="cc-username">You <span class="cc-badge user-badge">GUEST</span></span>
+                            
+                        </div>
+                    </div>
+                    <div id="playerTimer" class="cc-clock active-turn">05:00</div>
+                </div>
+            </div>
+
+            <div class="cc-sidebar-panel">
+                <div class="cc-panel-header">
+                    <h3>Play vs Computer</h3>
+                    <div id="chess-status" class="cc-status-text">Select options & press Start</div>
+                </div>
+
+                <div class="cc-settings-row">
+                    <label for="playerColor">Play As</label>
+                    <select id="playerColor" class="cc-select">
+                        <option value="w" selected>White (Move First)</option>
+                        <option value="b">Black (Bot Moves First)</option>
+                    </select>
+                </div>
+
+                <div class="cc-settings-row">
+                    <label for="timeControl">Time Control</label>
+                    <select id="timeControl" class="cc-select">
+                        <option value="180">3 Minutes</option>
+                        <option value="300" selected>5 Minutes</option>
+                        <option value="600">10 Minutes</option>
+                    </select>
+                </div>
+
+                <div class="cc-moves-wrapper">
+                    <div class="cc-moves-header">
+                        <span>#</span>
+                        <span>White</span>
+                        <span>Black</span>
+                    </div>
+                    <div class="cc-moves-log" id="moveLog">
+                        <div class="cc-empty-moves">No moves played yet</div>
+                    </div>
+                </div>
+
+                <div class="cc-actions-grid">
+                    <button id="startGameBtn" class="cc-btn cc-btn-primary">Start Game</button>
+                    <button id="resetBoardBtn" class="cc-btn cc-btn-secondary">Reset / Resign</button>
+                    <button id="flipBoardBtn" class="cc-btn cc-btn-icon" title="Flip Board">🔄 Flip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Panel 3: Services -->
+<section id="card-3" class="section-card services-section-card">
+    <div class="services-header">
+        <span class="about-badge">WHAT I DO</span>
+        <h2 class="about-title">My Services</h2>
+        <div class="about-divider"></div>
+    </div>
+
+    <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-item">
+           <!-- Web Development -->
+<div class="service-icon">
+    <i class="fa-solid fa-code"></i>
+</div>
+            <div class="service-content">
+                <h3>Web Development</h3>
+                <p>Building responsive, fast, and modern web applications tailored to user needs.</p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item">
+            <!-- UI/UX Design -->
+<div class="service-icon">
+    <i class="fa-solid fa-pen-ruler"></i>
+</div>
+            <div class="service-content">
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive interfaces with seamless, engaging user interactions.</p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-item">
+            <!-- Mobile-First Design -->
+<div class="service-icon">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+</div>
+            <div class="service-content">
+                <h3>Mobile-First Design</h3>
+                <p>Crafting adaptive and smooth web experiences optimized for touch screens.</p>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-icon-card service-item">
+            <!-- Performance & SEO -->
+<div class="service-icon">
+    <i class="fa-solid fa-gauge-high"></i>
+</div>
+            <div class="service-content">
+                <h3>Performance & SEO</h3>
+                <p>Optimizing codebases for lighting-fast load speeds and search engine visibility.</p>
+            </div>
+        </div>
+
+        <!-- Service 5 (Wide highlight) -->
+        <div class="service-item service-item-wide">
+            <!-- Prototyping & Wireframing -->
+<div class="service-icon">
+    <i class="fa-solid fa-object-group"></i>
+</div>
+            <div class="service-content">
+                <h3>Prototyping & Wireframing</h3>
+                <p>Transforming raw concepts into interactive wireframes and high-fidelity clickable prototypes before development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Panel 4: Contact Me -->
+<section id="card-4" class="section-card contact-section-card">
+    <!-- Floating Top-Center Header Badge -->
+    <div class="floating-contact-header">
+        <span class="about-badge">GET IN TOUCH</span>
+        <h2 class="about-title">Contact Me</h2>
+    </div>
+
+    <div class="contact-cards-grid">
+        <!-- Card 1: Call / Text -->
+        <div class="contact-card">
+            <div class="contact-icon-badge">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3 class="contact-card-title">Call / Text</h3>
+            <p class="contact-card-text">Direct mobile line for urgent inquiries and quick calls.</p>
+            <a href="tel:+639124592432" class="contact-action-btn">
+                <i class="fa-solid fa-phone"></i>
+                <span>+63 (912) 459-2432</span>
+            </a>
+        </div>
+
+        <!-- Card 2: Email -->
+<div class="contact-card">
+    <div class="contact-icon-badge">
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+    <h3 class="contact-card-title">Email Me</h3>
+    <p class="contact-card-text">Send me a detailed message or project brief anytime.</p>
+
+    <!-- Trigger Button -->
+    <button type="button" class="contact-action-btn" onclick="openEmailModal()">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Send Email</span>
+    </button>
+</div>
+
+
+        <!-- Card 3: Social Profiles -->
+<div class="contact-card">
+    <!-- Top Icon Badges Group (Facebook + LinkedIn + GitHub) -->
+    <div class="contact-icon-badge-group">
+        <div class="contact-icon-badge">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="contact-icon-badge">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="contact-icon-badge">
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+
+    <h3 class="contact-card-title">Social Profiles</h3>
+    <p class="contact-card-text">Connect with me professionally, check out my code, or follow my updates.</p>
+
+    <!-- Action Buttons Container (3 Social Buttons) -->
+    <div class="triple-btn-container">
+        <a href="https://facebook.com/keysiundrey" target="_blank" rel="noopener noreferrer" class="contact-action-btn social-btn">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kc-andrey-halcon-060020438/" target="_blank" rel="noopener noreferrer" class="contact-action-btn social-btn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/keysiundrey" target="_blank" rel="noopener noreferrer" class="contact-action-btn social-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </div>
+</div>
+</section>
+        </div>
+        <div class="social-sidebar">
+    <a href="https://github.com/keysiundrey" target="_blank" aria-label="GitHub" class="social-link">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kc-andrey-halcon-060020438/" target="_blank" aria-label="LinkedIn" class="social-link">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://facebook.com/keysiundrey" target="_blank" aria-label="Facebook" class="social-link">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+</div>
+
+        <div class="cursor-dot" id="cursorDot"></div>
+        <div class="cursor-outline" id="cursorOutline"></div>
+    </main>
+
+
+    <!-- AI Portfolio Chatbot -->
+    <div class="ai-chat-widget" id="aiChatWidget" aria-live="polite">
+        <button
+            type="button"
+            class="ai-chat-toggle"
+            id="aiChatToggle"
+            aria-label="Open AI portfolio assistant"
+            aria-expanded="false"
+        >
+            <i class="fa-solid fa-robot"></i>
+            <span class="ai-chat-toggle-label">AI</span>
+        </button>
+
+        <section class="ai-chat-panel" id="aiChatPanel" aria-label="AI Portfolio Assistant">
+            <div class="ai-chat-header">
+                <div>
+                    <strong>Portfolio AI</strong>
+                    <span>Ask me about this portfolio</span>
+                </div>
+                <button type="button" class="ai-chat-close" id="aiChatClose" aria-label="Close chat">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages">
+                <div class="ai-chat-message bot">
+                    <div class="ai-chat-avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div class="ai-chat-bubble">
+                        Hi! I'm the AI assistant for KC Andrey's portfolio. Ask me about the projects, services, skills, or contact information.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-chat-status" id="aiChatStatus" hidden></div>
+
+            <form class="ai-chat-form" id="aiChatForm">
+                <input
+                    type="text"
+                    id="aiChatInput"
+                    name="message"
+                    placeholder="Ask something..."
+                    autocomplete="off"
+                    maxlength="1000"
+                    required
+                >
+                <button type="submit" id="aiChatSend" aria-label="Send message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+            <div class="ai-chat-footer">
+                <span><i class="fa-solid fa-sparkles"></i> AI + portfolio knowledge</span>
+                <button type="button" id="aiChatClear">Clear</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
+    <script src="script.js"></script>
+<!-- ========================================================================== -->
+<!-- PLACE THIS AT THE VERY BOTTOM OF YOUR HTML FILE (JUST BEFORE </body>)      -->
+<!-- ========================================================================== -->
+<div id="emailModalOverlay" class="email-modal-overlay" onclick="closeEmailModalOnBackdrop(event)">
+    <div class="email-modal-card">
+        <!-- Close Modal X Button -->
+        <button type="button" class="email-modal-close" onclick="closeEmailModal()" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <form id="contactForm" action="https://formspree.io/f/xeaoorwv" method="POST" class="email-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First name*</label>
+                    <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="userEmail">Email*</label>
+                <input type="email" id="userEmail" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="message">What can we help you with?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="email-submit-btn">Submit</button>
+            <p id="formStatus" class="form-status-msg"></p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
